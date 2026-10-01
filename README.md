@@ -46,3 +46,7 @@ Then, in a separate terminal at the repository root, start the app with `npm ins
 ERC-20/BEP-20-compatible token contracts are discovered from `Transfer` logs in the scanned range and their balances are read with `balanceOf`. You can also manually add a token contract address to check a token that had no transfers in that range. The scan depth is configurable (maximum 20,000 blocks); a token with no matching transfer in the scanned range must be added manually. Local Hardhat has no built-in explorer, so external explorer links are optional.
 
 The app is read-only: it does not request wallet access, signatures, or send transactions. The local RPC receives the searched address and requested block range.
+
+## Contract verification API
+
+To enable the Contract tab's source verification features, start the separate Express API in `nodejsbackend/`. Follow [its setup guide](nodejsbackend/README.md) to configure MySQL and Solidity compiler binaries. The API uses `http://127.0.0.1:8081` by default, matching the app's verifier URL setting. The existing PHP service in `backend/` is kept separate and unchanged.

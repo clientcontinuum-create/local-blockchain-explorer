@@ -43,7 +43,7 @@ export default function ContractVerification({ address, detected, rpcUrl, apiUrl
     if (!apiUrl.trim()) {
       setSupportedVersions([]);
       setVersionsLoading(false);
-      setVersionsError("Set the PHP verifier API URL in Network settings first.");
+      setVersionsError("Set the contract verifier API URL in Network settings first.");
       return undefined;
     }
 
@@ -111,7 +111,7 @@ export default function ContractVerification({ address, detected, rpcUrl, apiUrl
     setSubmitError("");
     setSubmitMessage("");
     if (!apiUrl.trim()) {
-      setSubmitError("Set the PHP verifier API URL in Network settings first.");
+      setSubmitError("Set the contract verifier API URL in Network settings first.");
       return;
     }
     if (!contractName.trim()) {
