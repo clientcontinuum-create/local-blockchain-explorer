@@ -1,6 +1,19 @@
 # Blockchain UI
 
-A standalone React + Vite address inspector for the local Hardhat blockchain. This project has its own dependencies and configuration inside `blockchain ui/`; it does not use the sibling `ui/` app or Solidity package.
+A standalone React + Vite address inspector for the local Hardhat blockchain.
+
+## About this project
+
+Blockchain UI is a lightweight, read-only blockchain explorer for inspecting activity on a local Hardhat network. It reads data from the configured JSON-RPC endpoint and presents recent transactions, address balances, token activity, and transaction details in a browser. It is intended for local development and learning, and does not require a wallet connection or expose controls for signing or sending transactions.
+
+This project is a good fit for developers learning EVM chains or testing smart contracts who want a simple way to inspect local accounts, transactions, and token activity. It may not meet your needs if you are looking for a production-grade public explorer, broad multi-chain indexing, or wallet and transaction-submission features; this app is intentionally read-only and geared toward a local Hardhat network.
+
+## Use cases
+
+- Inspect transactions created while developing or testing smart contracts.
+- Check an account's native currency and ERC-20/BEP-20-compatible token balances and activity.
+- Review transaction status, gas, calldata, and receipt token transfers when debugging.
+- Demonstrate blockchain and token activity in a local environment without relying on an external explorer.
 
 ## Run locally
 
