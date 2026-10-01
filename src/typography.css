@@ -1,0 +1,98 @@
+.app-shell .brand { font-size:13px; }
+.app-shell .network-pill { font-size:12px; }
+.app-shell .eyebrow { font-size:11px; }
+.app-shell .hero-copy { font-size:15px; }
+.app-shell .search-panel>label { font-size:12px; }
+.app-shell .search-control input { font-size:14px; }
+.app-shell .search-control button { font-size:14px; }
+.app-shell .search-hint { font-size:11px; }
+.app-shell .address-title-row h2 { font-size:29px; }
+.app-shell .full-address { font-size:12px; }
+.app-shell .view-token-link { font-size:13px; }
+.app-shell .metric-label { font-size:12px; }
+.app-shell .metric>strong { font-size:clamp(25px,3vw,36px); }
+.app-shell .metric-foot { font-size:13px; }
+.app-shell .section-heading h2 { font-size:27px; }
+.app-shell .result-count { font-size:11px; }
+.app-shell .refresh-button { font-size:12px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger)>.chain-ledger-header { font-size:11px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger)>.chain-ledger-row { font-size:13px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-hash { font-size:12px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-method { font-size:12px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-block,.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-age { font-size:12px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-address,.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-to { font-size:11px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-amount { font-size:12px; }
+.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-fee { font-size:11px; }
+.app-shell .token-transfer-ledger>.chain-ledger-header { font-size:10px; }
+.app-shell .token-transfer-ledger>.chain-ledger-row { font-size:12px; }
+.app-shell .token-transfer-ledger .ledger-hash { font-size:11px; }
+.app-shell .token-transfer-ledger .ledger-block,.app-shell .token-transfer-ledger .ledger-age { font-size:11px; }
+.app-shell .token-transfer-ledger .ledger-address,.app-shell .token-transfer-ledger .ledger-to { font-size:10px; }
+.app-shell .token-transfer-ledger .ledger-amount { font-size:11px; }
+.app-shell .token-transfer-ledger .ledger-fee { font-size:10px; }
+.app-shell .transaction-page-heading>p { font-size:15px; }
+.app-shell .transaction-page .tx-detail-heading { font-size:17px; }
+.app-shell .transaction-page .tx-detail-line dt,.app-shell .transaction-page .tx-detail-line dd { font-size:14px; }
+.app-shell .transaction-page .tx-detail-line dd code,.app-shell .transaction-page .tx-detail-line dd>a { font-size:13px; }
+.app-shell .home-chain-stat>span { font-size:11px; }
+.app-shell .home-chain-stat>strong { font-size:24px; }
+.app-shell .home-chain-stat>small { font-size:12px; }
+.app-shell .token-symbol,.app-shell .token-name { font-size:13px; }
+.app-shell .token-balance-card>strong { font-size:23px; }
+.app-shell .token-balance-card>strong small { font-size:13px; }
+.app-shell .token-balance-card>code { font-size:11px; }
+.app-shell .token-scan-note { font-size:12px; }
+.app-shell .token-heading-copy h1 { font-size:32px; }
+.app-shell .token-address-line code { font-size:11px; }
+.app-shell .token-stat-label { font-size:10px; }
+.app-shell .token-stat>strong { font-size:25px; }
+.app-shell .token-stat>strong small { font-size:12px; }
+.app-shell .token-stat>small { font-size:12px; }
+.app-shell .token-stat.token-creator>strong { font-size:14px; }
+.app-shell .token-stat.token-creator>code { font-size:10px; }
+.app-shell .empty-state strong { font-size:17px; }
+.app-shell .empty-state p { font-size:14px; }
+.app-shell .back-to-results { font-size:12px; }
+.app-shell .app-footer { font-size:10px; }
+
+@media(max-width:600px) {
+  .app-shell .network-pill { font-size:10px; }
+  .app-shell .eyebrow { font-size:10px; }
+  .app-shell .hero-copy { font-size:14px; }
+  .app-shell .search-panel>label { font-size:11px; }
+  .app-shell .search-control input,.app-shell .search-control button { font-size:13px; }
+  .app-shell .search-hint { font-size:10px; }
+  .app-shell .address-title-row h2 { font-size:24px; }
+  .app-shell .full-address { font-size:10px; }
+  .app-shell .metric-label { font-size:11px; }
+  .app-shell .metric>strong { font-size:24px; }
+  .app-shell .metric-foot { font-size:11px; }
+  .app-shell .section-heading h2 { font-size:24px; }
+  .app-shell .result-count { font-size:10px; }
+  .app-shell .chain-ledger:not(.token-transfer-ledger)>.chain-ledger-header { font-size:10px; }
+  .app-shell .chain-ledger:not(.token-transfer-ledger)>.chain-ledger-row { font-size:12px; }
+  .app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-hash { font-size:11px; }
+  .app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-address,.app-shell .chain-ledger:not(.token-transfer-ledger) .ledger-to { font-size:10px; }
+  .app-shell .token-transfer-ledger>.chain-ledger-header { font-size:10px; }
+  .app-shell .token-transfer-ledger .ledger-hash { font-size:10px; }
+  .app-shell .home-chain-stat>span { font-size:10px; }
+  .app-shell .home-chain-stat>strong { font-size:21px; }
+  .app-shell .home-chain-stat>small { font-size:11px; }
+  .app-shell .token-symbol,.app-shell .token-name { font-size:12px; }
+  .app-shell .token-balance-card>strong { font-size:22px; }
+  .app-shell .token-balance-card>strong small { font-size:12px; }
+  .app-shell .token-balance-card>code { font-size:10px; }
+  .app-shell .token-heading-copy h1 { font-size:23px; }
+  .app-shell .token-address-line code { font-size:9px; }
+  .app-shell .token-stat-label { font-size:9px; }
+  .app-shell .token-stat>strong { font-size:21px; }
+  .app-shell .token-stat>strong small { font-size:11px; }
+  .app-shell .token-stat-supply>strong { font-size:17px; white-space:nowrap; }
+  .app-shell .token-stat-supply>strong small { font-size:9px; }
+  .app-shell .token-stat>small { font-size:11px; }
+  .app-shell .token-stat.token-creator>strong { font-size:12px; }
+  .app-shell .token-stat.token-creator>code { font-size:9px; }
+  .app-shell .empty-state strong { font-size:16px; }
+  .app-shell .empty-state p { font-size:13px; }
+  .app-shell .app-footer { font-size:9px; }
+}
