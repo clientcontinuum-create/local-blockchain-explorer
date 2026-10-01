@@ -1,4 +1,4 @@
-# Blockchain UI
+# LOCAL BLOCKCHAIN EXPLORER
 
 A standalone React + Vite address inspector for the local Hardhat blockchain.
 
@@ -26,14 +26,22 @@ Open the local URL printed by Vite. To make a production bundle, run `npm run bu
 
 ## Connect to local Hardhat
 
-Start the local chain from the separate Solidity project:
+The Hardhat node is a separate, self-contained project in this repository's `solidity/` folder. In one terminal, from the repository root, install its dependencies and start the node:
 
 ```sh
-cd ../solidity
+cd solidity
+npm install
 npm run node
 ```
 
-Then run this app with its default RPC URL, `http://127.0.0.1:8545`. The home page scans recent blocks and lists all transactions found, 10 at a time. Search an address to see its native/token balances and filter the ledger to transactions where it is sender or recipient. Selecting a row opens a deep-linked transaction detail page with status, block, time, value, gas, nonce, calldata, and receipt token transfers.
+With the node still running, open another terminal, enter `solidity/`, and deploy the sample BEP-20-compatible token:
+
+```sh
+cd solidity
+npm run deploy
+```
+
+Then, in a separate terminal at the repository root, start the app with `npm install` and `npm run dev` if you have not already done so. The app connects to the node at `http://127.0.0.1:8545` by default. The home page scans recent blocks and lists all transactions found, 10 at a time. Search an address to see its native/token balances and filter the ledger to transactions where it is sender or recipient. Selecting a row opens a deep-linked transaction detail page with status, block, time, value, gas, nonce, calldata, and receipt token transfers. Stop the local chain with `Ctrl+C` when finished.
 
 ERC-20/BEP-20-compatible token contracts are discovered from `Transfer` logs in the scanned range and their balances are read with `balanceOf`. You can also manually add a token contract address to check a token that had no transfers in that range. The scan depth is configurable (maximum 20,000 blocks); a token with no matching transfer in the scanned range must be added manually. Local Hardhat has no built-in explorer, so external explorer links are optional.
 

@@ -1,0 +1,16 @@
+{
+  "name": "local-hardhat-chain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone local Hardhat node for the Blockchain UI explorer",
+  "type": "module",
+  "scripts": {
+    "node": "hardhat node --hostname 127.0.0.1",
+    "compile": "hardhat compile",
+    "deploy": "npm run compile && node scripts/deploy.js"
+  },
+  "devDependencies": {
+    "hardhat": "^3.18.1",
+    "ethers": "^6.14.0"
+  }
+}
